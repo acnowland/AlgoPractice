@@ -51,16 +51,59 @@
 
 // averagePair([1,3,5], 2.5)
 
-function isSubsequence(firstString, secondString){
-    let firstStringLocation = 0 
-    for(var i = 0; i<secondString.length;i++){
-        let currentLetter = secondString[i]
-        if(currentLetter == firstString[firstStringLocation]){
-            firstStringLocation++ 
+// function isSubsequence(firstString, secondString){
+//     let firstStringLocation = 0 
+//     for(var i = 0; i<secondString.length;i++){
+//         let currentLetter = secondString[i]
+//         if(currentLetter == firstString[firstStringLocation]){
+//             firstStringLocation++ 
+//         }
+//     }
+//     return(firstStringLocation == firstString.length)
+
+// }
+
+// console.log(isSubsequence('hellp', 'hello world'))]
+
+// function maxSubarraySum(array, subLength){
+//     // add whatever parameters you deem necessary - good luck!
+//     if(subLength > array.length){
+//         return null
+//     }
+//     let maxSum = 0 
+//     for(var i = 0; i<subLength; i++){
+//         maxSum += array[i]
+//     }
+    
+//     let tempSum = maxSum
+//     for(var j = subLength; j<array.length;j++){
+//         tempSum += array[j] - array[j-subLength]
+//         console.log(tempSum)
+//         if(tempSum > maxSum){
+//             maxSum = tempSum
+//         }
+//     }
+//     return maxSum
+
+// }
+
+// console.log(maxSubarraySum([3,-2,7,-4,-1,4,-2,1], 2))
+
+function minSubarrayLen(array, totalNumber){
+    let minLength = 0 
+    let total = 0 
+
+    for(var i = 0; total<totalNumber; i++){
+        total += array[i]
+        if(total >= totalNumber){
+            minLength = i + 1
         }
     }
-    return(firstStringLocation == firstString.length)
+
+    for(var j = minLength; j<array.length;j++){
+        
+    }
+
 
 }
-
-console.log(isSubsequence('hellp', 'hello world'))
+console.log(minSubarrayLen([2,3,1,2,4,3],6))
