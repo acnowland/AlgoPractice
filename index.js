@@ -89,21 +89,68 @@
 
 // console.log(maxSubarraySum([3,-2,7,-4,-1,4,-2,1], 2))
 
-function minSubarrayLen(array, totalNumber){
-    let minLength = 0 
-    let total = 0 
+// function minSubarrayLen(array, totalNumber){
+//     let minLength = 0 
+//     let total = 0 
 
-    for(var i = 0; total<totalNumber; i++){
-        total += array[i]
-        if(total >= totalNumber){
-            minLength = i + 1
-        }
-    }
+//     for(var i = 0; total<totalNumber; i++){
+//         total += array[i]
+//         if(total >= totalNumber){
+//             minLength = i + 1
+//         }
+//     }
 
-    for(var j = minLength; j<array.length;j++){
-        
-    }
+//     for(var j = minLength; j<array.length;j++){
+
+//     }
 
 
-}
-console.log(minSubarrayLen([2,3,1,2,4,3],6))
+// }
+// console.log(minSubarrayLen([2,3,1,2,4,3],6))
+
+
+
+///RECURSIVE WORK!!!!///
+
+// function power(num, raisedTo){
+//     if(raisedTo == 0) return 1
+//     return num * power(num, raisedTo -1)
+// }
+// console.log(power(2,0)) // 1)
+// console.log(power(2,2)) // 4
+// console.log(power(2,4)) // 16
+
+// function factorial(num){
+//    if(num < 1) return 1
+//    return num * factorial(num-1)
+// }
+// console.log(factorial(2)) // 2
+// console.log(factorial(4)) // 24
+// console.log(factorial(7)) // 5040
+
+// function productOfArray(numArray){
+//     if(numArray.length == 0) return 1
+//     return numArray[0] * productOfArray(numArray.slice(1))
+// }
+// console.log(productOfArray([1,2,3])) // 6
+// console.log(productOfArray([1,2,3,10])) // 60
+
+
+// function recursiveRange(num){ 
+//     if(num === 0) return 0
+//     return num + recursiveRange(num -1)
+// }
+// console.log(recursiveRange(6)) // 21
+// recursiveRange(10) // 55 c
+
+
+
+// function fib(n){
+//     if (n <= 2) return 1;
+//     return fib(n-1) + fib(n-2);
+// }
+
+// console.log(fib(4)) // 3
+// fib(10) // 55
+// fib(28) // 317811
+// fib(35) // 9227465
