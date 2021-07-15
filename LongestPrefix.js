@@ -1,5 +1,4 @@
 var longestCommonPrefix = function(strs) {
-    // let sorted = strs.sort()
     let currentPrefix = strs[0]
     let newPrefix = ""
     
@@ -24,6 +23,9 @@ var longestCommonPrefix = function(strs) {
 
 
 console.log(longestCommonPrefix(["flower","flow","flight"]))
+// Big O = On^2 (nested for loop included)
 
+//much better approach after reading
+//instead of looping whole array you really just need to compare the first and the last item after sorting
 
 
