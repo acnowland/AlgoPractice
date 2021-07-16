@@ -1,4 +1,3 @@
-
 // function sameFrequency(num1, num2){
 //     const num1Split = num1.toString().split('')
 //     const num2Split = num2.toString().split('')
@@ -32,7 +31,7 @@
 // areThereDuplicates(1,2,3,4,5)
 
 // function averagePair(numberArray, average){
-//     let start = 0 
+//     let start = 0
 //     let end = numberArray.length - 1
 //     while(start < end){
 //         let currentAverage = (numberArray[start] + numberArray[end]) / 2
@@ -52,11 +51,11 @@
 // averagePair([1,3,5], 2.5)
 
 // function isSubsequence(firstString, secondString){
-//     let firstStringLocation = 0 
+//     let firstStringLocation = 0
 //     for(var i = 0; i<secondString.length;i++){
 //         let currentLetter = secondString[i]
 //         if(currentLetter == firstString[firstStringLocation]){
-//             firstStringLocation++ 
+//             firstStringLocation++
 //         }
 //     }
 //     return(firstStringLocation == firstString.length)
@@ -70,11 +69,11 @@
 //     if(subLength > array.length){
 //         return null
 //     }
-//     let maxSum = 0 
+//     let maxSum = 0
 //     for(var i = 0; i<subLength; i++){
 //         maxSum += array[i]
 //     }
-    
+
 //     let tempSum = maxSum
 //     for(var j = subLength; j<array.length;j++){
 //         tempSum += array[j] - array[j-subLength]
@@ -90,8 +89,8 @@
 // console.log(maxSubarraySum([3,-2,7,-4,-1,4,-2,1], 2))
 
 // function minSubarrayLen(array, totalNumber){
-//     let minLength = 0 
-//     let total = 0 
+//     let minLength = 0
+//     let total = 0
 
 //     for(var i = 0; total<totalNumber; i++){
 //         total += array[i]
@@ -104,13 +103,10 @@
 
 //     }
 
-
 // }
 // console.log(minSubarrayLen([2,3,1,2,4,3],6))
 
-
-
-///RECURSIVE WORK!!!!///
+// /RECURSIVE WORK!!!!///
 
 // function power(num, raisedTo){
 //     if(raisedTo == 0) return 1
@@ -135,15 +131,12 @@
 // console.log(productOfArray([1,2,3])) // 6
 // console.log(productOfArray([1,2,3,10])) // 60
 
-
-// function recursiveRange(num){ 
+// function recursiveRange(num){
 //     if(num === 0) return 0
 //     return num + recursiveRange(num -1)
 // }
 // console.log(recursiveRange(6)) // 21
 // recursiveRange(10) // 55 c
-
-
 
 // function fib(n){
 //     if (n <= 2) return 1;
